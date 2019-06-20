@@ -1,11 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
+<div style="width:100%; color: blue;"> 
+    <div class="card-header">
+        <div style="text-align: center;"> 
+            <img src="{{ asset('images/title.png') }}" alt="Aqui ira la imagen" class="img-fluid">
+        </div>
+    </div>
+</div>
 <div class="container">
+
+
+<body background='../images/fondos.jpg'>
+
+
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+                <h3 class="card-header">{{ __('¿Olvidaste tu contraseña?') }}</h3>
+                     <h6 class="card-body">Bienvenido a juegos clásicos, Introduce tu correo electronico para enviarte un link de resert password.</h6>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">
